@@ -1,0 +1,13 @@
+.logo{
+    width: 100px;
+    padding-right: 10px;
+}
+
+.logo-brand{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+.list{
+    list-style: none;
+}

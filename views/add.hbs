@@ -1,0 +1,37 @@
+<div class="w-75 mx-auto">
+    <p class="fs-1">Navbatga qo'shilish</p>
+    {{#if errorAddQueues}}
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+      <strong>Error!</strong> {{errorAddQueues}}
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    {{/if}}
+ <form action="/add-queue" method="post">
+  <div class="mb-3">
+    <label for="firstname" class="form-label">Ism</label>
+    <input type="text" class="form-control" maxlength="15" name="firstname" id="floatingInput" aria-describedby="nameHelp">
+  </div>
+  <div class="mb-3">
+    <label for="lastname" class="form-label">Familiya</label>
+    <input type="title" class="form-control"  maxlength="15" name="lastname" id="floatingInput">
+  </div>
+  <div class="mb-3">
+    <label for="time" class="form-label">Vaqt</label>
+   <select class="form-select mb-3" name="time" aria-label="Default select example">
+    <option selected disabled></option>
+    <option value="9">09:00</option>
+    <option value="10">10:00</option>
+    <option value="11">11:00</option>
+    <option value="12">12:00</option>
+    <option value="13">13:00</option>
+    <option value="14">14:00</option>
+    <option value="15">15:00</option>
+    <option value="16">16:00</option>
+    <option value="17">17:00</option>
+    <option value="18">18:00</option>
+    <option value="19">19.00</option>
+   </select>
+  </div>
+  <button type="submit" class="btn btn-primary">Qo'shish</button>
+ </form>
+</div>
